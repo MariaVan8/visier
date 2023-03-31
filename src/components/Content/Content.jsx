@@ -22,7 +22,6 @@ function Content({ data, expandAll }) {
       >
         {/* {children} */}
         <h2 className="content__title">
-          
           {/* What is the resignation rate for different job families? */}
           {data.title}
         </h2>
@@ -30,8 +29,7 @@ function Content({ data, expandAll }) {
           Job family with the highest resignation rate is Individual Contributor
           2 at 18.9%.
         </h3> */}
-        <p dangerouslySetInnerHTML={{__html: data.subTitle}}/>
-          
+        <p dangerouslySetInnerHTML={{ __html: data.subTitle }} />
 
         <div className="content__expand">
           <button onClick={() => expandClick()} className="content__btn">

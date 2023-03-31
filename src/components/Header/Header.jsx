@@ -7,7 +7,7 @@ import options from "../../assets/logo/options.svg";
 import lightingIcon from "../../assets/images/lighting.svg";
 import plusIcon from "../../assets/images/Plus.svg";
 
-function Header({ expandAllClick }) {
+function Header({ expandAllClick, expandAll }) {
   return (
     <>
       <div className="header">
@@ -42,8 +42,16 @@ function Header({ expandAllClick }) {
             </a>
           </div>
           <div className="wrapper__expand" onClick={expandAllClick}>
-            <p className="wrapper__text">Expand All</p>
-            <img src={arrowdown} />
+            <p className="wrapper__text">
+              {expandAll ? "Collapse" : "Expand All"}
+            </p>
+            <img
+              src={arrowdown}
+              style={{
+                transform: expandAll ? "rotate(180deg)" : "rotate(0)",
+                transition: "0.5s",
+              }}
+            />
           </div>
         </div>
       </div>
