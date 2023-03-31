@@ -1,0 +1,26 @@
+
+.sideNav {
+    
+    background-color: black;
+
+    &-nav {
+
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+
+            &-image {
+                height: 2rem;
+                width: 2rem;
+                background-color: azure;
+            }
+
+        }
+
+
+    }
+}
