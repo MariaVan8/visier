@@ -10,12 +10,14 @@
   &__title {
     font-weight: 400;
     font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   &__subtitle {
     font-weight: 400;
     font-size: 1rem;
     color: #586470;
+    margin-top: 0;
   }
 
   &__tags {
@@ -53,4 +55,15 @@
       }
     }
   }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    align-items: baseline;
+  }
+}
+.header__icon {
+  display: flex;
+  gap: 1rem;
 }
