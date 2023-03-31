@@ -6,6 +6,10 @@
     border: 1px solid #d9d9d9;
     border-radius: 6px;
     padding: 2rem;
+    &:hover {
+      background-color: #f8fafc;
+      cursor: pointer;
+    }
   }
 
   &__title {
@@ -15,6 +19,10 @@
   &__expand {
     text-align: right;
     font-weight: 600;
+    color: #17666a;
+    &:hover {
+      color: #0c3335;
+    }
   }
 
   &__btn {

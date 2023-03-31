@@ -10,11 +10,16 @@ function Content({ children }) {
 
   return (
     <div className="content">
-      <div className="content__wrapper">
+      <div
+        onClick={expandClick}
+        className={`content__wrapper ${
+          expanded ? "content_graph-wrapper--expanded" : ""
+        }`}
+      >
         {children}
         <div className="content__expand">
           <button onClick={() => expandClick()} className="content__btn">
-            Expand
+            Click for more details
           </button>
           <div
             className={
