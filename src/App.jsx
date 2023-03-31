@@ -1,4 +1,5 @@
 import "./App.scss";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
 // import resignByFamily from "./assets/images/resignation-family.png";
@@ -6,7 +7,9 @@ import Content from "./components/Content/Content";
 function App() {
   return (
     <>
+         
       <Header />
+      <Sidebar />
       <Content />
       {/* <h2 className="content__title">
           What is the resignation rate for different job families?
