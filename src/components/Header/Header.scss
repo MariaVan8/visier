@@ -59,11 +59,24 @@
   .header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-right: 3rem;
+    padding-right: 2rem;
     align-items: baseline;
   }
 }
 .header__icon {
   display: flex;
   gap: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: baseline;
+  &__text {
+    padding-right: 2.2rem;
+    font-weight: 600;
+  }
+  &__expand {
+  }
 }
