@@ -66,6 +66,7 @@
 .header__icon {
   display: flex;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -79,5 +80,6 @@
   }
   &__expand {
     display: flex;
+    cursor: pointer;
   }
 }
