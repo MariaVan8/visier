@@ -3,6 +3,9 @@
   border-bottom: 3px solid #00ccff;
   color: #1e252d;
   margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 
   &__title {
     font-weight: 400;

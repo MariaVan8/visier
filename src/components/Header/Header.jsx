@@ -1,4 +1,6 @@
 import "./Header.scss";
+import lightingIcon from "../../assets/images/lighting.svg";
+import plusIcon from "../../assets/images/Plus.svg";
 
 function Header() {
   return (
@@ -12,10 +14,14 @@ function Header() {
           Feb 2022
         </a>
         <a className="header__tag header__tag--color" href="#">
-          + Add a filter
+          <img src={plusIcon} alt="" /> Add a filter
         </a>
         <a className="header__tag" href="#">
-          ..
+          <img
+            src={lightingIcon}
+            className="header__lighting-icon"
+            alt="icon"
+          />
         </a>
         <a className="header__tag header__tag--dots" href="#">
           ...
