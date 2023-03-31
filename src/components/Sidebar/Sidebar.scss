@@ -1,29 +1,23 @@
-
 .sideNav {
-    
-    background-color: black;
-    position: fixed;
-    width: 4rem;
-    height: 100%;
-    
-    &-nav {
+  background-color: black;
+  position: fixed;
+  width: 4rem;
+  height: 300vh;
+  position: absolute;
+  z-index: 999;
 
-
-        &__list {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &__item {
-
-            &-image {
-                height: 2rem;
-                width: 2rem;
-                background-color: azure;
-            }
-
-        }
-
-
+  &-nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      margin-left: -1.5rem;
     }
+
+    &__item {
+      &-image {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
 }
