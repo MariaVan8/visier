@@ -5,9 +5,11 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
+
     <>
-      <Sidebar />
+      
       <Header />
+      <Sidebar />
       <Content>
         <h2 className="content__title">
           What is the resignation rate for different job families?

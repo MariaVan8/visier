@@ -1,4 +1,4 @@
-import "../Sidebar/Sidebar/scss";
+import "../Sidebar/Sidebar.scss";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -12,24 +12,25 @@ const Sidebar = () => {
                 <nav className="sideNav-nav">
                     <ul className="sideNav-nav__list">
                         <li className="sideNav-nav__item">
-                            <Link to="/" > 
+                            <a href="#" > 
                                 <img className="sideNav-nav__item-image" src="" alt=""/> 
-                            </Link>
+                            </a>
                         </li>
                         <li className="sideNav-nav__item">
-                        <Link to="/" > 
+                        <a to="#" > 
                                 <img className="sideNav-nav__item-image" src="" alt=""/> 
-                            </Link>
+                        </a>
                         </li>
                         <li className="sideNav-nav__item">
-                        <Link to="/" > 
+                        <a href="#" > 
                                 <img className="sideNav-nav__item-image" src="" alt=""/> 
-                            </Link>
+                         
+                        </a>
                         </li>
                         <li className="sideNav-nav__item">
-                        <Link to="/" > 
+                        <a to="#" > 
                                 <img className="sideNav-nav__item-image" src="" alt=""/> 
-                        </Link>
+                        </a>
                         </li>
                     </ul>
                 </nav>
