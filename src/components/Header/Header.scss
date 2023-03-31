@@ -1,5 +1,5 @@
 .header {
-  padding: 4rem 4rem 2rem;
+  padding: 4rem 6rem 2rem;
   border-bottom: 3px solid #00ccff;
   color: #1e252d;
   margin-bottom: 1rem;
@@ -59,11 +59,25 @@
   .header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-right: 3rem;
+    padding-right: 0.5rem;
     align-items: baseline;
   }
 }
 .header__icon {
   display: flex;
   gap: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: baseline;
+  &__text {
+    padding-right: 0.5rem;
+    font-weight: 600;
+  }
+  &__expand {
+    display: flex;
+  }
 }

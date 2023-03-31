@@ -2,6 +2,7 @@ import "./App.scss";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
+import { useState } from "react";
 import resignByFamily from "./assets/images/resignation-family.png";
 import performanceImg from "./assets/images/performance.png";
 import orgTenure from "./assets/images/organization-tenure.png";
@@ -48,47 +49,29 @@ const data = [
 ]
 
 function App() {
+  const [expandAll, setExpandAll] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  function expandAllClick() {
+    console.log("EXPANDING ALL");
+    setExpandAll(!expandAll);
+    setExpanded(!expanded);
+  }
+
+  function expandClick() {
+    setExpanded(!expanded);
+  }
+
   return (
     <>
-         
-      <Header />
+      <Header expandAllClick={expandAllClick} />
       <Sidebar />
-      <Content data={data[0]}/>
-      <Content data={data[1]} />
-      <Content data={data[2]} />
-      <Content data={data[3]} />
-      <Content data={data[4]} />
-      <Content data={data[5]} />
-      {/* {
-        data.map((info) => {
-          return 
-          <Content 
-            img={info.img}
-            title={info.title}
-            subTitle={info.subTitle}
-          />
-        })
-      } */}
-
-      {/* <h2 className="content__title">
-          What is the resignation rate for different job families?
-        </h2>
-        <h3 className="content__description">
-          Job family with the highest resignation rate is Individual Contributor
-          2 at 18.9%.
-        </h3> */}
-      {/* </Content> */}
-      {/* //  <Content> */}
-        {/* <h2 className="content__title">
-          What is the resignation rate at different performance levels?
-        </h2>
-        <h3 className="content__description">
-          Performance level with the highest resignation rate is Low Performer
-          at 18.4%.
-        </h3> */}
-      {/* </Content> 
-       <Content /> 
-      <Content />  */}
+      <Content expandAll={expandAll} data={data[0]}/>
+      <Content expandAll={expandAll} data={data[1]} />
+      <Content expandAll={expandAll} data={data[2]} />
+      <Content expandAll={expandAll} data={data[3]} />
+      <Content expandAll={expandAll} data={data[4]} />
+      <Content expandAll={expandAll} data={data[5]} />
     </>
   );
 }
