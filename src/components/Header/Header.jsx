@@ -1,4 +1,5 @@
 import "./Header.scss";
+import { useState } from "react";
 import share from "../../assets/logo/share.svg";
 import download from "../../assets/logo/download_icon.svg";
 import arrowdown from "../../assets/logo/expand_more.svg";
@@ -6,7 +7,7 @@ import options from "../../assets/logo/options.svg";
 import lightingIcon from "../../assets/images/lighting.svg";
 import plusIcon from "../../assets/images/Plus.svg";
 
-function Header() {
+function Header({ expandAllClick }) {
   return (
     <>
       <div className="header">
@@ -40,7 +41,7 @@ function Header() {
               ...
             </a>
           </div>
-          <div className="wrapper__expand">
+          <div className="wrapper__expand" onClick={expandAllClick}>
             <p className="wrapper__text">Expand All</p>
             <img src={arrowdown} />
           </div>
