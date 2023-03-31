@@ -1,13 +1,17 @@
 import "./Content.scss";
 import resignByFamily from "../../assets/images/resignation-family.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function Content({ children }) {
+function Content({ children, expandAll }) {
   console.log(children);
   const [expanded, setExpanded] = useState(false);
   function expandClick() {
     setExpanded(!expanded);
   }
+
+  useEffect(() => {
+    setExpanded(expandAll);
+  }, [expandAll]);
 
   return (
     <div className="content">
