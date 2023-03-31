@@ -1,0 +1,42 @@
+.content {
+  padding: 1rem 4rem;
+  color: #1e252d;
+
+  &__wrapper {
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 2rem;
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__expand {
+    text-align: right;
+    font-weight: 600;
+  }
+
+  &__btn {
+    all: unset;
+    cursor: pointer;
+  }
+
+  // animate height: https://stackoverflow.com/a/8331169
+  &__graph-wrapper {
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    &--expanded {
+      max-height: 1000px;
+      transition: max-height 0.5s ease-in;
+    }
+  }
+
+  &__graph-image {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
