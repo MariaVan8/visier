@@ -59,7 +59,7 @@
   .header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-right: 2rem;
+    padding-right: 0.5rem;
     align-items: baseline;
   }
 }
@@ -74,9 +74,10 @@
   height: 2.5rem;
   align-items: baseline;
   &__text {
-    padding-right: 2.2rem;
+    padding-right: 0.5rem;
     font-weight: 600;
   }
   &__expand {
+    display: flex;
   }
 }
